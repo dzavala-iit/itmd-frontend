@@ -45,8 +45,8 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
-        npm run build -c
         
+        npm run test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v4
